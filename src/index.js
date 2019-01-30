@@ -1,5 +1,8 @@
-const animalForm = document.getElementById('animal-form');
 import catOrDog from './cat-or-dog.js';
+
+const animalForm = document.getElementById('animal-form');
+const image = document.getElementById('animal-image');
+
 
 animalForm.addEventListener('submit', function(event){
     event.preventDefault();
@@ -10,5 +13,11 @@ animalForm.addEventListener('submit', function(event){
 
     const animal = catOrDog(randomNumber);
     console.log(animal);
+
+    let imageSource = '';
+    if(animal === 'cat'){
+        imageSource = '../assets/cat.jpg/';
+    }
+    
 
 });
