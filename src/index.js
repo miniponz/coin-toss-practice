@@ -16,8 +16,16 @@ animalForm.addEventListener('submit', function(event){
 
     let imageSource = '';
     if(animal === 'cat'){
-        imageSource = '../assets/cat.jpg/';
+        imageSource = './assets/cat.jpg';
     }
+    else {
+        imageSource = './assets/dog.jpg';
+    }
+
+    console.log(imageSource);
+    image.src = imageSource;
+    image.classList.remove('hidden');
+
     
 
 });

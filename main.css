@@ -1,9 +1,12 @@
 #image-container{
     border: 1px solid black;
-    min-height: 200px;
-    min-width: 200px;
+    height: 225px;
+    width: 300px;
 }
-
+img{
+    width: 300px;
+}
 .hidden{
     visibility: hidden;
 }
+
